@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var(--primary);
+  color: lightgray;
   line-height: 1.5;
   background-image: url("cloud.JPG");
   background-size: cover;
@@ -44,6 +44,10 @@ header {
   background-color: var(--tertiary);
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
+.logo {
+  width: 285px;
+  height: 40px;
+}
 
 header h1 {
   color: var(--tertiary);
@@ -63,10 +67,11 @@ nav {
 nav a {
   text-decoration: none;
   padding: 5px 10px;
-  color: var(--secondary);
+  color: #b0becd;
   margin-right: 10px;
-  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-image: linear-gradient(0deg, rgba(62,62,62,1) 0%, rgba(190,193,196,1) 100%);
   background-repeat: no-repeat;
+  border-radius: 50%;
   background-size: 100% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
@@ -75,7 +80,7 @@ nav a {
 
 nav a:hover {
   background-size: 100% 100%;
-  color: var(--primary);
+  color: grey;
 }
 
 nav a:last-child {
@@ -87,12 +92,12 @@ main {
   margin-bottom: 45px;
 }
 
+
 .banner {
   background: grey;
   background-position: center;
   background-blend-mode: soft-light;
   min-height: 1vh;
-  color: red;
   padding: 1% 3%;
   display: flex;
   justify-content: flex-end;
@@ -103,6 +108,10 @@ main {
 .banner div {
   text-align: center;
   flex: 0 0 90%;
+}
+.portfo {
+  width: 285px;
+  height: 50px;
 }
 
 .banner h2 {
@@ -136,7 +145,7 @@ main {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
-  border-right: 4px solid var(--primary);
+  border-right: 4px solid lightgray;
   font-size: 4vw;
   line-height: 1.1;
 }
@@ -156,7 +165,7 @@ main {
 }
 
 .flex-item {
-  border: 5px solid var(--secondary);
+  border: 5px solid lightgray;
   background-color: var(--primary);
   color: var(--tertiary);
   min-height: 150px;
@@ -184,7 +193,7 @@ main {
 }
 
 .flex-item div {
-  background-color: var(--secondary);
+  background-color: lightgray;
   padding: 8px 10px;
 }
 
@@ -192,7 +201,7 @@ main {
   font-size: 1.6rem;
 }
 
-.contact address {
+.contact button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -200,22 +209,21 @@ main {
   height: 100%;
 }
 
-.contact address a {
+.contact button {
   color: var(--tertiary);
-  padding: 5px;
-  text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 15px;
   font-style: normal;
+  color: lightgrey;
   background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
   background-repeat: no-repeat;
-  background-size: 100% 0.2em;
+  border-radius: 50%;
+  border-color: lightgrey;
   background-position: bottom;
   transition: all 0.25s ease-in;
-  margin: 0 0.2rem 0.1rem;
   display: inline-block;
 }
 
-.contact address a:hover {
+.contact button:hover {
   background-size: 100% 88%;
   color: var(--secondary);
 }

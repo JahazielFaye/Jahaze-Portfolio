@@ -287,6 +287,7 @@ main {
 /* end portfolio project images */
 
 @media screen and (max-width: 980px) {
+  .me
   header {
     padding: 0 0 10px 0;
     justify-content: center;
@@ -320,6 +321,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  .me 
   .flex-item,
   .flex-item:first-child {
     flex-basis: 100%;

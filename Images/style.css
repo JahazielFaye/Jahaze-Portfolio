@@ -49,6 +49,8 @@ header {
 }
 
 .me {
+  min-height: initial;
+  min-width: initial;
   width: 275px;
   height: 275px;
   border-radius: 30%;
@@ -105,7 +107,7 @@ main {
   height: 20px;
   background-color: var(--tertiary);
   background-size: 55px;
-  position: relative;
+  position: static;
   top: -100px;
 
 }
@@ -177,7 +179,7 @@ main {
 
 .page-section p {
   margin-bottom: 20px;
-  position: relative;
+  position: static;
   top: -200px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
@@ -285,9 +287,14 @@ main {
 
 
 /* end portfolio project images */
+/*media queries*/
 
 @media screen and (max-width: 980px) {
-  .me
+  .me {
+    width:100%;
+    height:auto;
+    text-align:center;
+  }
   header {
     padding: 0 0 10px 0;
     justify-content: center;
@@ -307,7 +314,8 @@ main {
 
   .page-section > h2,
   .page-section > div {
-    flex: 0 0 100%;
+    resize: both;
+    overflow: auto;
   }
 
   .page-section > h2 {
@@ -321,7 +329,11 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .me 
+ .me {
+  width:200px;
+  height:auto;
+  text-align:left;
+  }
   .flex-item,
   .flex-item:first-child {
     flex-basis: 100%;
@@ -341,3 +353,4 @@ main {
     align-items: flex-start;
   }
 }
+

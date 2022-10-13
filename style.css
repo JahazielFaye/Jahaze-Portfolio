@@ -52,6 +52,7 @@ header {
   width: 275px;
   height: 275px;
   border-radius: 30%;
+  border: solid lightgray;
 }
 
 header h1 {

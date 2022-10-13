@@ -50,8 +50,8 @@ header {
 
 .me {
   width: 275px;
-  height: 245px;
-  border-radius: 50%;
+  height: 275px;
+  border-radius: 30%;
 }
 
 header h1 {
@@ -63,10 +63,12 @@ header h1 {
   line-height: 1;
 }
 
-nav {
+.top-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  display: flex;
+
 }
 
 nav a {
@@ -93,13 +95,17 @@ nav a:last-child {
 }
 
 main {
-  margin-top: 20px;
-  margin-bottom: 45px;
+  margin-top: 60px;
+  margin-bottom: 55px;
 }
 
 .font {
   width: 220px;
   height: 20px;
+  background-color: var(--tertiary);
+  background-size: 55px;
+  position: relative;
+  top: -100px;
 
 }
 .bio {
@@ -157,10 +163,10 @@ main {
 
 .page-section > h2 {
   flex: 0 0 20%;
-  text-align: right;
+  text-align: left;
   padding-right: 15px;
   border-right: 4px solid lightgray;
-  font-size: 4vw;
+  font-size: 6vw;
   line-height: 1.1;
 }
 
@@ -170,21 +176,28 @@ main {
 
 .page-section p {
   margin-bottom: 20px;
+  position: relative;
+  top: -200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  background-color: var(--tertiary);
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  display: inline-block;
 }
 
 .flex-item {
   border: 5px solid lightgray;
-  background-color: var(--primary);
   color: var(--tertiary);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
+  position: relative;
+  top: -100px;
   display: flex;
   align-items: flex-end;
   padding: 0 0 20px 0;
@@ -194,6 +207,7 @@ main {
   background-size: 150%;
   transition: all 0.5s;
   font-size: 0.9rem;
+  border-radius: 30%;
 }
 
 /* feature first portfolio item */
@@ -208,11 +222,16 @@ main {
 
 .flex-item div {
   background-color: lightgray;
-  padding: 8px 10px;
+  padding: 5px 5px;
+  margin: auto;
+  border: 20px 20px;
+  text-align: center;
 }
 
 .flex-item h3 {
   font-size: 1.6rem;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .contact button {
@@ -230,7 +249,7 @@ main {
   color: lightgrey;
   background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
   background-repeat: no-repeat;
-  border-radius: 50%;
+  border-radius: 40%;
   border-color: lightgrey;
   background-position: bottom;
   transition: all 0.25s ease-in;
@@ -240,28 +259,29 @@ main {
 .contact button:hover {
   background-size: 100% 88%;
   color: var(--secondary);
+
 }
 
 /* portfolio project images */
-.run-buddy {
-  background-image: url("../images/02-run-buddy.jpg");
+
+.to-do {
+  background-image: url("https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  position: relative;
+  left: -130px;
 }
 
-.led-wall {
-  background-image: url("../images/02-portfolio-1.jpg");
+.Calculator {
+  background-image: url("https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  position: relative;
+  left: -130px;
 }
 
-.react-calc {
-  background-image: url("../images/02-portfolio-2.jpg");
+.Note-app {
+  background-image: url("https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  position: relative;
+  left: -130px;
 }
 
-.pastel-puzzles {
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
-.surf-report {
-  background-image: url("../images/02-portfolio-4.jpg");
-}
 
 /* end portfolio project images */
 

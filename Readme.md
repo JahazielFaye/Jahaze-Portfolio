@@ -5,8 +5,8 @@ A portfolio of my work that showcase my skills and talents to forward in this ca
 
 Learned the basics and advance HTML and CSS. was able to apply and deploy.
 
-```md
-![Profile-snippet]  ("C:\Users\zxiel\OneDrive\Pictures\Screenshots\Portfolio snippet.png")```
+
+![Profile-snippet] ("./)
 
 ## Credits
 https://www.fontspace.com/new/fonts for the imaging and fonts.

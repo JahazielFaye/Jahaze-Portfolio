@@ -188,63 +188,35 @@ main {
   top: -200px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.card{
+  width: 200px;
+  height: 230px;
   display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  box-shadow:0 0 20px #6e7ecb;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
 }
 
-.flex-item {
-  border: 5px solid lightgray;
-  color: var(--tertiary);
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
-  position: relative;
-  top: -100px;
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 150%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
-  border-radius: 30%;
-}
-
-/* feature first portfolio item */
-.flex-item:first-child {
-    min-height: 400px;
-    flex-basis: 100%;
-}
-
-.flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.flex-item div {
-  background-color: lightgray;
-  padding: 5px 5px;
-  margin: auto;
-  border: 20px 20px;
-  text-align: center;
-}
-
-.flex-item h3 {
-  font-size: 1.6rem;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+.card:hover{
+  transform: translateY(-10px)
 }
 
 .contact button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
 }
 
 .contact button {
@@ -269,27 +241,12 @@ main {
 
 /* portfolio project images */
 
-.to-do {
-  background-image: url("https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  position: relative;
-  left: -130px;
-}
 
-.Calculator {
-  background-image: url("https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  position: relative;
-  left: -130px;
-}
-
-.Note-app {
-  background-image: url("https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  position: relative;
-  left: -130px;
-}
 
 
 /* end portfolio project images */
 /*media queries*/
+
 
 @media screen and (max-width: 980px) {
   .me {
